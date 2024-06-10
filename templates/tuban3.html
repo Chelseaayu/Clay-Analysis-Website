@@ -43,31 +43,43 @@
         <h1 class="text-center">TUBAN 3</h1>
         <form action="/tuban3" method="POST">
             <div class="form-group">
-                <label for="miningDate">Tanggal Tambang:</label>
+                <label for="miningDate">Tanggal Tambang :</label>
                 <input type="date" id="miningDate" name="miningDate" class="form-control">
             </div>
             <div class="form-group">
-                <label for="permproHighAl">Permintaan Produksi High Alumina:</label>
+                <label for="shift">Shift :</label>
+                <input type="number" id="shift" name="shift" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="clayType">Jenis Tanah Liat :</label>
+                <select id="clayType" name="clayType" class="form-control">
+                    <option value="high">High Alumina</option>
+                    <option value="low">Low Alumina</option>
+                    <option value="both">High & Low Alumina</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="permproHighAl">Permintaan Produksi High Alumina (ton) :</label>
                 <input type="number" id="permproHighAl" name="permproHighAl" class="form-control">
             </div>
             <div class="form-group">
-                <label for="permproLowAl">Permintaan Produksi Low Alumina:</label>
+                <label for="permproLowAl">Permintaan Produksi Low Alumina (ton) :</label>
                 <input type="number" id="permproLowAl" name="permproLowAl" class="form-control">
             </div>
             <div class="form-group">
-                <label for="stokStorageHal">Stok High Alumina di Clay Storage:</label>
+                <label for="stokStorageHal">Stok High Alumina di Clay Storage (ton) :</label>
                 <input type="number" id="stokStorageHal" name="stokStorageHal" class="form-control">
             </div>
             <div class="form-group">
-                <label for="stokStorageLal">Stok Low Alumina di Clay Storage:</label>
+                <label for="stokStorageLal">Stok Low Alumina di Clay Storage (ton) :</label>
                 <input type="number" id="stokStorageLal" name="stokStorageLal" class="form-control">
             </div>
             <div class="form-group">
-                <label for="tambangHal">Hasil Tambang High Alumina:</label>
+                <label for="tambangHal">Hasil Tambang High Alumina (ton) :</label>
                 <input type="number" id="tambangHal" name="tambangHal" class="form-control">
             </div>
             <div class="form-group">
-                <label for="tambangLal">Hasil Tambang Low Alumina:</label>
+                <label for="tambangLal">Hasil Tambang Low Alumina (ton) :</label>
                 <input type="number" id="tambangLal" name="tambangLal" class="form-control">
             </div>
             <div class="button-group">
