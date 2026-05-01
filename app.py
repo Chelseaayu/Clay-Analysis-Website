@@ -1,9 +1,10 @@
+import os
 from flask import Flask, render_template, request, redirect, url_for, session
 from models import index, tuban1, tuban2, tuban3, tuban4, db
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:bismillahlancar@localhost/tanah_liat'
-app.config['SQLALCHEMY_TRACK_MODIFICATION'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db.init_app(app)
 
 @app.route('/')
