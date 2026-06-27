@@ -100,6 +100,9 @@ Each `tuban` table stores: `mining_date`, `shift`, `permpro_high_al`, `permpro_l
 - Python 3.6+
 - PostgreSQL installed and running
 - Virtual environment (`myenv`)
+- Flask-SQLAlchemy
+- psycopg2-binary
+- gunicorn
 
 ### Installation
 
